@@ -6,11 +6,11 @@ To use the spell checker, compile the speller.c file along with dictionary.c:
 
 clang -o speller speller.c dictionary.c -lcs50 -lm
 
-Then, run the compiled executable with the text file you want to spell-check:
+You need to create a directory called "texts" and put the text file you want to spellcheck there. A sample text file is in the repository. Then, run the compiled executable with the text file you want to spell-check:
 
 ./speller text.txt
 
-By default, the program uses the large dictionary provided in the dictionaries directory. You can specify a different dictionary by passing it as a command-line argument:
+Create a directory called "dictionary" and put your dictionary file there or you can use the one provided here. If you have multiple dictinoaries, you can specify a different dictionary by passing it as a command-line argument:
 
 ./speller dictionary.txt text.txt
 
