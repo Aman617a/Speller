@@ -1,4 +1,5 @@
-Spell Checker
+Spell Checker!
+
 This is a spell-checking program that allows users to check the spelling of words in a given text file against a provided dictionary.
 
 Usage
