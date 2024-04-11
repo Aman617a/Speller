@@ -1,23 +1,30 @@
-# Speller
-This project implements essential dictionary functionality in C, offering features such as efficient word lookup, memory management, and size determination. It includes the following key components:
+Spell Checker
+This is a spell-checking program that allows users to check the spelling of words in a given text file against a provided dictionary.
 
-Hash Table Implementation: Utilizes hash tables for fast and efficient storage and retrieval of dictionary words.
+Usage
+To use the spell checker, compile the speller.c file along with dictionary.c:
 
-Memory Management: Implements proper memory allocation and deallocation techniques to ensure efficient use of resources.
+clang -o speller speller.c dictionary.c -lcs50 -lm
 
-Size Determination: Provides functionality to determine the size of the loaded dictionary, offering insights into the number of words stored.
+Then, run the compiled executable with the text file you want to spell-check:
 
-Open Source: Licensed under Unlicense, this project is open for collaboration and contributions from the community.
+./speller text.txt
 
-How to Use:
+By default, the program uses the large dictionary provided in the dictionaries directory. You can specify a different dictionary by passing it as a command-line argument:
 
-Clone the repository to your local machine.
-Compile the source code using your preferred C compiler.
-Follow the instructions in the README file to run the program and interact with the dictionary functionality.
+./speller dictionary.txt text.txt
 
-License:
-This project is licensed under Unlicense. See the LICENSE file for more details.
+Experimenting with Hashing Function
+You can experiment with the hashing function used in the spell checker to optimize its speed and memory usage. Here's how:
 
+Open the dictionary.c file.
+Locate the hash function, which is responsible for generating hash values for words.
+Modify the hash function to test different prime numbers or collision resolution techniques.
+Save your changes and compile speller.c to see the effect of your modifications on the program's performance.
+Note: Make sure to test your changes thoroughly to ensure that they improve the spell checker's efficiency without compromising its accuracy.
 
+Benchmarking
+After experimenting with the hashing function, you can benchmark the spell checker to compare its performance before and after your modifications. The program reports various benchmarks, including the time taken to load the dictionary, check words, determine the dictionary's size, and unload the dictionary.
 
-
+Contributing
+Contributions to this spell checker are welcome! If you have ideas for improving the program or optimizing its performance further, feel free to submit a pull request.
