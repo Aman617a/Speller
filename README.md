@@ -5,7 +5,7 @@ This is a spell-checking program that allows users to check the spelling of word
 Usage
 To use the spell checker, compile the speller.c file along with dictionary.c:
 
-clang -o speller speller.c dictionary.c -lcs50 -lm
+make speller.c
 
 You need to create a directory called "texts" and put the text file you want to spellcheck there. A sample text file is in the repository. Then, run the compiled executable with the text file you want to spell-check:
 
